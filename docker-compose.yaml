@@ -1,19 +1,19 @@
-version: '3'
+# version: '3'
 
-services:
-  backend:
-    build:
-      context: .
-      dockerfile: ./Dockerfile-back
-    expose:
-      - 8080
-    network_mode: "host"
-    volumes:
-      - ./build/libs/:/backend/
-    restart: always
-    stdin_open: true
-    tty: true
-  database:
-      build:
-          context: .
-          dockerfile: ./Dockerfile-db
+# services:
+#   backend:
+#     build:
+#       context: .
+#       dockerfile: ./Dockerfile-back
+#     expose:
+#       - 8080
+#     network_mode: "host"
+#     volumes:
+#       - ./build/libs/:/backend/
+#     restart: always
+#     stdin_open: true
+#     tty: true
+#   database:
+#       build:
+#           context: .
+#           dockerfile: ./Dockerfile-db
